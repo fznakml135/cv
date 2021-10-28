@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+  background-color: #16282E;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contentBox{
+  width: 750px;
+  margin: 0px auto;
+  position: relative;
+  margin-left: 400px;
+  margin-top: 100px;
+}
+
+h1{
+  color: white;
+  font-size: 60px;
+}
+
+h2{
+  color: #B3B3B3;
+  font-size: 25px;
+  width: 550px;
+}
+
+#pembukaan{
+  color: #C9C9C9;
+  font-size: 16px;
+  width: 550px;
+}
+
+#navBar{
+  position: fixed;
+  height: 100%;
+  padding: 30px;
+  border-right: solid 1px grey;
+  top: 0;
+  left: 0;
+  background-color: #16282E;
+}
+
+#navBarHead{
+  position: relative;
+  left: 25px;
+}
+
+#navBarFoot{
+  position: fixed;
+  text-align: center;
+  bottom: 30px;
+  margin: 0 auto;
+}
+
+#navBar h1{
+  color: #C9C9C9;
+  font-size: 34px;
+}
+
+#navBar ul li{
+  list-style-type: none;
+}
+
+#navBar ul li a{
+  text-decoration: none;
+  color: #B3B3B3;
+}
+
+#navBar ul li a:hover{
+  color: #2A9D8F;
+}
+
+#menuTop{
+  margin-top: 20px;
+}
+
+.menuList{
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.iconLogo{
+  display: inline;
+  margin-left: 10px;
+}
+
+#iconKiri{
+  margin-left: 0px;
+}
+
+.clearFix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.garisPembatas{
+  background: grey;
+  width: 100%;
+  height: 1px;
+}
+
+.subHeader{
+  color: #C0C0C0;
+}
+
+.textContent{
+  font-size: 16px;
+  color: #C9C9C9;
+  margin-left: 0px;
+  width: 700px;
+}
+
+#kontakContainer{
+  width: inherit;
+  height: 200px;
+  text-align: center;
+}
+
+.kontakContainer{
+  width: 250px;
+  height: 200px;
+  float: left;
+  padding: 50px 45px;
+}
+
+.judulIcon, .captionIcon{
+  color: #C9C9C9;
+}
+
+
+/* CSS Skill animated */
+.skills {
+  width: 620px;
+  margin-left: -0px;;
+  border-radius: 10px;
+  display: block;
+}
+
+.skills-bar {
+  padding: 25px 30px;
+}
+
+.skills-bar .bar {
+  margin: 25px 0;
+}
+
+.skills-bar .bar .info span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.skills-bar .bar .info {
+  margin-bottom: 8px;
+  color: #B3B3B3;
+}
+
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 10px;
+  width: 550px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+  position: absolute;
+  background: #25b79f;
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line .html {
+  width: 80%;
+}
+.progress-line .css {
+  width: 70%;
+}
+.progress-line .cpp {
+  width: 82%;
+}
+.progress-line .c {
+  width: 62%;
+}
+.progress-line .java {
+  width: 50%;
+}
+.progress-line .aPremiere {
+  width: 90%;
+}
+
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -14px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #07374a;
+}
+
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #f0f0f0;
+  font-size: 12px;
+  font-weight: 700;
+  background: #07374a;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+
+.progress-line .html::after {
+  content: "80%";
+}
+.progress-line .css::after {
+  content: "70%";
+}
+.progress-line .cpp::after {
+  content: "82%";
+}
+.progress-line .c::after {
+  content: "62%";
+}
+.progress-line .java::after {
+  content: "50%";
+}
+.progress-line .aPremiere::after {
+  content: "90%";
+}
+
+/* ////........Media Query........//// */
+
+@media (max-width: 700px) {
+    .skills{
+        width: 80%;
+    }
+
+    .skills-bar .bar .progress-line{
+        width: 100%;
+    }
+}
+
+/* CSS untuk pendidikan */
+* {
+  box-sizing: border-box;
+}
+
+.content h2, .content p{
+  color: #fff;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #25B79F;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timelineContainer {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timelineContainer::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #25B79F;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #25B79F;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #25B79F;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #25B79F transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  border: solid 1px #25B79F;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .timelineContainer {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .timelineContainer::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
