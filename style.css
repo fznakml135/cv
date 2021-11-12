@@ -128,6 +128,76 @@ h2{
   color: #C9C9C9;
 }
 
+#contact-email{
+  height: 350px;
+  width: 800px;
+  margin-left: 400px;
+  margin-top: -30px;
+  margin-bottom: 100px;
+}
+
+.inputBox{
+  height: 30px;
+  width: 252px;
+  margin-right: 14px;
+  float: left;
+}
+
+input{
+  height: 28px;
+  width: 250px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #2A9D8F;
+  color: white;
+  padding: 20px 20px;
+  padding-left: 0px;
+}
+
+input:focus{
+  outline: none;
+}
+
+input:-webkit-autofill{
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white !important;
+}
+
+textarea{
+  margin-top: 20px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #2A9D8F;
+  padding: 20px 20px;
+  padding-left: 0px;
+  color: white;
+}
+
+textarea:focus{
+  outline: none;
+}
+
+button{
+  background: none;
+  border: 1px solid #2A9D8F;
+  color: white;
+  padding: 10px 20px;
+  width: 785px;
+}
+
+button:focus{
+  outline: none;
+}
+
+button:hover{
+  background-color: #2A9D8F;
+  color: black;
+}
+
+button:active{
+  position: relative;
+  top: 2px;
+}
 
 /* CSS Skill animated */
 .skills {
